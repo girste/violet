@@ -1,15 +1,14 @@
-title: "Le Mie Creazioni"
-subtitle: "Una selezione delle mie opere più rappresentative, dove arte e gioielleria si incontrano in perfetta armonia."
+title: Le Mie Creazioni
+subtitle: Una selezione delle mie opere più rappresentative, dove arte e
+  gioielleria si incontrano in perfetta armonia.
 images:
-  - src: "/assets/gallery-1.jpg"
-    alt: "Creazione unica di gioielleria"
-  - src: "/assets/gallery-2.jpg"
-    alt: "Gioiello con materiali preziosi"
-  - src: "/assets/gallery-3.jpg"
-    alt: "Lavorazione artigianale"
-  - src: "/assets/gallery-4.jpg"
-    alt: "Anello di alta gioielleria"
-  - src: "/assets/gallery-5.jpg"
-    alt: "Collana artigianale"
-  - src: "/assets/gallery-6.jpg"
-    alt: "Orecchini preziosi"
+  - src: /assets/img_20250823_134651.webp
+    alt: orecchini
+  - src: /assets/img_20250705_163639.webp
+    alt: dettaglio anello
+  - src: /assets/img_20250301_165833-1-.webp
+    alt: collana
+  - src: /assets/img_20250814_124017.webp
+    alt: collana
+  - src: /assets/img_20250814_131056.webp
+    alt: bracciali
