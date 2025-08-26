@@ -1,24 +1,51 @@
 sections:
-  - title: "Creazioni Uniche"
-    image: "/assets/creazioni-uniche.jpg"
-    image_alt: "Creazioni uniche di gioielleria"
-    icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="text-sage-400 md:w-6 md:h-6"><path d="M6 3h12l4 6-10 13L2 9l4-6z"></path></svg>'
+  - title: Creazioni Uniche test
+    image: /assets/creazioni-uniche.jpg
+    image_alt: Creazioni uniche di gioielleria
+    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="1" class="text-sage-400 md:w-6
+      md:h-6"><path d="M6 3h12l4 6-10 13L2 9l4-6z"></path></svg>
     text:
-      - "Ogni gioiello nasce da un'idea, da un'emozione da catturare. Con tecniche artigianali tradizionali e materiali preziosi selezionati, do vita a creazioni che raccontano storie uniche e personali."
-      - "L'attenzione ai dettagli e la ricerca dell'eccellenza sono il cuore di ogni mia creazione, per offrire gioielli che durano nel tempo."
-  
-  - title: "Materiali Preziosi"
-    image: "/assets/materiali-preziosi.jpg"
-    image_alt: "Materiali preziosi selezionati"
-    icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="text-sage-400 md:w-6 md:h-6"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>'
+      - Ogni gioiello nasce da un'idea, da un'emozione da catturare. Con
+        tecniche artigianali tradizionali e materiali preziosi selezionati, do
+        vita a creazioni che raccontano storie uniche e personali.
+      - L'attenzione ai dettagli e la ricerca dell'eccellenza sono il cuore di
+        ogni mia creazione, per offrire gioielli che durano nel tempo.
+  - title: Materiali Preziosi
+    image: /assets/materiali-preziosi.jpg
+    image_alt: Materiali preziosi selezionati
+    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="1" class="text-sage-400 md:w-6
+      md:h-6"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65
+      0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65
+      0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0
+      1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0
+      1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0
+      0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65
+      0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65
+      0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2
+      2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1
+      2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0
+      1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51
+      1z"></path></svg>
     text:
-      - "Oro 18kt, argento sterling, pietre preziose e semipreziose: ogni materiale è selezionato con cura per garantire qualità e bellezza durature nel tempo."
-      - "La sostenibilità e l'etica sono valori fondamentali: lavoro solo con fornitori certificati che rispettano standard elevati di responsabilità ambientale e sociale."
-  
-  - title: "Passione Artigianale"
-    image: "/assets/passione-artigianale.jpg"
-    image_alt: "Lavorazione artigianale dei gioielli"
-    icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="text-sage-400 md:w-6 md:h-6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>'
+      - "Oro 18kt, argento sterling, pietre preziose e semipreziose: ogni
+        materiale è selezionato con cura per garantire qualità e bellezza
+        durature nel tempo."
+      - "La sostenibilità e l'etica sono valori fondamentali: lavoro solo con
+        fornitori certificati che rispettano standard elevati di responsabilità
+        ambientale e sociale."
+  - title: Passione Artigianale
+    image: /assets/passione-artigianale.jpg
+    image_alt: Lavorazione artigianale dei gioielli
+    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="1" class="text-sage-400 md:w-6
+      md:h-6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5
+      5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0
+      0-7.78z"></path></svg>
     text:
-      - "Ogni pezzo nasce dalle mie mani e dal mio cuore. La passione per l'arte orafa mi guida in ogni fase della creazione, dal disegno iniziale alla finitura finale."
-      - "Realizzo anche creazioni su misura, collaborando strettamente con i clienti per dare forma ai loro sogni e alle loro emozioni più preziose."
+      - Ogni pezzo nasce dalle mie mani e dal mio cuore. La passione per l'arte
+        orafa mi guida in ogni fase della creazione, dal disegno iniziale alla
+        finitura finale.
+      - Realizzo anche creazioni su misura, collaborando strettamente con i
+        clienti per dare forma ai loro sogni e alle loro emozioni più preziose.
