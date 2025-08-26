@@ -1,12 +1,43 @@
 sections:
-  - title: "Privacy Policy"
-    content: "I tuoi dati personali vengono trattati nel rispetto del Regolamento Europeo sulla Protezione dei Dati (GDPR). Le informazioni raccolte attraverso il form di contatto vengono utilizzate esclusivamente per rispondere alle tue richieste."
-  
-  - title: "Cookie Policy"  
-    content: "Questo sito utilizza cookie tecnici necessari per il corretto funzionamento delle pagine. Non utilizziamo cookie di profilazione o di terze parti per scopi pubblicitari."
-  
-  - title: "Termini di Servizio"
-    content: "Tutti i contenuti di questo sito, incluse immagini e testi, sono protetti da copyright. La riproduzione non autorizzata è vietata. I gioielli mostrati sono creazioni originali e possono essere soggetti a variazioni."
-  
-  - title: "Contatti"
-    content: "Per qualsiasi domanda riguardante il trattamento dei dati o questioni legali, contatta: privacy@violetjewels.com"
+  - title: Privacy Policy
+    content: test lunghezza sezione I tuoi dati personali vengono trattati nel
+      rispetto del Regolamento Europeo sulla Protezione dei Dati (GDPR). Le
+      informazioni raccolte attraverso il form di contatto vengono utilizzate
+      esclusivamente per rispondere alle tue richieste.test lunghezza sezione I
+      tuoi dati personali vengono trattati nel rispetto del Regolamento Europeo
+      sulla Protezione dei Dati (GDPR). Le informazioni raccolte attraverso il
+      form di contatto vengono utilizzate esclusivamente per rispondere alle tue
+      richieste.test lunghezza sezione I tuoi dati personali vengono trattati
+      nel rispetto del Regolamento Europeo sulla Protezione dei Dati (GDPR). Le
+      informazioni raccolte attraverso il form di contatto vengono utilizzate
+      esclusivamente per rispondere alle tue richieste.test lunghezza sezione I
+      tuoi dati personali vengono trattati nel rispetto del Regolamento Europeo
+      sulla Protezione dei Dati (GDPR). Le informazioni raccolte attraverso il
+      form di contatto vengono utilizzate esclusivamente per rispondere alle tue
+      richieste.test lunghezza sezione I tuoi dati personali vengono trattati
+      nel rispetto del Regolamento Europeo sulla Protezione dei Dati (GDPR). Le
+      informazioni raccolte attraverso il form di contatto vengono utilizzate
+      esclusivamente per rispondere alle tue richieste.test lunghezza sezione I
+      tuoi dati personali vengono trattati nel rispetto del Regolamento Europeo
+      sulla Protezione dei Dati (GDPR). Le informazioni raccolte attraverso il
+      form di contatto vengono utilizzate esclusivamente per rispondere alle tue
+      richieste.test lunghezza sezione I tuoi dati personali vengono trattati
+      nel rispetto del Regolamento Europeo sulla Protezione dei Dati (GDPR). Le
+      informazioni raccolte attraverso il form di contatto vengono utilizzate
+      esclusivamente per rispondere alle tue richieste.test lunghezza sezione I
+      tuoi dati personali vengono trattati nel rispetto del Regolamento Europeo
+      sulla Protezione dei Dati (GDPR). Le informazioni raccolte attraverso il
+      form di contatto vengono utilizzate esclusivamente per rispondere alle tue
+      richieste.
+  - title: Cookie Policy
+    content: Questo sito utilizza cookie tecnici necessari per il corretto
+      funzionamento delle pagine. Non utilizziamo cookie di profilazione o di
+      terze parti per scopi pubblicitari.
+  - title: Termini di Servizio
+    content: Tutti i contenuti di questo sito, incluse immagini e testi, sono
+      protetti da copyright. La riproduzione non autorizzata è vietata. I
+      gioielli mostrati sono creazioni originali e possono essere soggetti a
+      variazioni.
+  - title: Contatti
+    content: "Per qualsiasi domanda riguardante il trattamento dei dati o questioni
+      legali, contatta: privacy@violetjewels.com"
