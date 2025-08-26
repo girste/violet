@@ -1,0 +1,82 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets"
+public_folder: "/assets"
+
+collections:
+  - name: "settings"
+    label: "Impostazioni Sito"
+    files:
+      - label: "Configurazione Generale"
+        name: "site"
+        file: "_data/site.yml"
+        fields:
+          - {label: "Titolo Sito", name: "title", widget: "string"}
+          - {label: "Descrizione", name: "description", widget: "text"}
+          - {label: "URL Sito", name: "url", widget: "string"}
+          - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "Favicon", name: "favicon", widget: "image"}
+          - {label: "Immagine OG", name: "og_image", widget: "image"}
+          
+      - label: "Sezione Hero"
+        name: "hero"
+        file: "_data/hero.yml"
+        fields:
+          - {label: "Titolo", name: "title", widget: "string"}
+          - {label: "Sottotitolo", name: "subtitle", widget: "text"}
+          - {label: "Immagine", name: "image", widget: "image"}
+          - {label: "Testo Alt Immagine", name: "image_alt", widget: "string"}
+          - {label: "Testo Pulsante", name: "cta_text", widget: "string"}
+          - {label: "Link Pulsante", name: "cta_link", widget: "string"}
+          
+      - label: "Chi Siamo"
+        name: "about"
+        file: "_data/about.yml"
+        fields:
+          - {label: "Titolo", name: "title", widget: "string"}
+          - {label: "Descrizione", name: "description", widget: "text"}
+          - {label: "Immagine", name: "image", widget: "image"}
+          - {label: "Testo Alt Immagine", name: "image_alt", widget: "string"}
+          
+      - label: "Servizi"
+        name: "services"
+        file: "_data/services.yml"
+        fields:
+          - {label: "Titolo Sezione", name: "title", widget: "string"}
+          - label: "Lista Servizi"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Titolo", name: "title", widget: "string"}
+              - {label: "Descrizione", name: "description", widget: "text"}
+              - {label: "Immagine", name: "image", widget: "image"}
+              
+      - label: "Contatti"
+        name: "contact"
+        file: "_data/contact.yml"
+        fields:
+          - {label: "Titolo", name: "title", widget: "string"}
+          - {label: "Descrizione", name: "description", widget: "text"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Telefono", name: "phone", widget: "string"}
+          - {label: "Indirizzo", name: "address", widget: "text"}
+          
+      - label: "Footer"
+        name: "footer"
+        file: "_data/footer.yml"
+        fields:
+          - {label: "Copyright", name: "copyright", widget: "string"}
+
+  - name: "blog"
+    label: "Blog"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Titolo", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Immagine in evidenza", name: "featured_image", widget: "image", required: false}
+      - {label: "Riassunto", name: "excerpt", widget: "text"}
+      - {label: "Contenuto", name: "body", widget: "markdown"}
