@@ -185,60 +185,20 @@
                         {{ contact.description }}
                     </p>
                     
-                    <!-- Form di contatto -->
-                    <form action="https://form-data.com/{{ contact.form_email }}" method="POST" class="max-w-2xl mx-auto space-y-8"
-                        x-data="{ sending: false, success: false }"
-                        @submit.prevent="sending = true;
-                            $el.submit();
-                            setTimeout(() => {
-                                sending = false;
-                                success = true;
-                                $el.reset();
-                            }, 1000)">
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <input type="hidden" name="_captcha" value="false" />
-                            <div>
-                                <input type="text" name="nome" placeholder="Nome" required class="w-full px-0 py-4 bg-transparent border-0 border-b border-gray-300 focus:border-sage-400 focus:outline-none text-lg font-light transition-colors">
-                            </div>
-                            <div>
-                                <input type="email" name="email" placeholder="Email" required class="w-full px-0 py-4 bg-transparent border-0 border-b border-gray-300 focus:border-sage-400 focus:outline-none text-lg font-light transition-colors">
-                            </div>
-                        </div>
-                        <div>
-                            <input type="text" name="oggetto" placeholder="Oggetto" required class="w-full px-0 py-4 bg-transparent border-0 border-b border-gray-300 focus:border-sage-400 focus:outline-none text-lg font-light transition-colors">
-                        </div>
-                        <div>
-                            <textarea name="messaggio" placeholder="Il tuo messaggio..." rows="6" required class="w-full px-0 py-4 bg-transparent border-0 border-b border-gray-300 focus:border-sage-400 focus:outline-none text-lg font-light transition-colors resize-none"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit"
-                                class="px-12 py-4 border border-sage-400 text-sage-400 hover:bg-sage-400 hover:text-white transition-all duration-300 font-light text-lg tracking-wide"
-                                :class="{ 'opacity-50 cursor-not-allowed': sending }"
-                                :disabled="sending || success">
-                                <span x-show="!sending && !success">Invia Messaggio</span>
-                                <span x-show="sending" class="flex items-center justify-center gap-2">
-                                    <svg class="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                                    </svg>
-                                    Invio...
-                                </span>
-                                <span x-show="success" class="flex items-center justify-center gap-2 text-sage-400">
-                                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        <path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    Messaggio Inviato
-                                </span>
-                            </button>
-                        </div>
-                    </form>
+                    <!-- Contatto Email -->
+                    <div class="text-center">
+                        <a href="mailto:{{ contact.form_email }}?subject=Richiesta informazioni gioielli" 
+                           class="inline-block px-12 py-4 border border-sage-400 text-sage-400 hover:bg-sage-400 hover:text-white transition-all duration-300 font-light text-lg tracking-wide">
+                            Invia Email
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Lineetta elegante -->
         <section class="py-4 bg-white">
-            <div class="w-px h-24 bg-sage-400 mx-auto rounded-full"></div>
+            <div class="w-px h-36 bg-sage-400 mx-auto rounded-full"></div>
         </section>
 
         <!-- Quote grande -->
@@ -251,7 +211,7 @@
         </section>
 
         <!-- Titolo enorme finale -->
-        <section class="py-24 bg-cream">
+        <section class="py-16 bg-cream">
             <div class="w-full">
                 <h2 class="font-playfair text-8xl md:text-9xl lg:text-[12rem] font-light text-[#2d2d2d] text-center leading-none">
                     {{ site.title }}
@@ -261,7 +221,7 @@
     </main>
 
     <!-- Footer con modale legale -->
-    <footer class="py-16 bg-cream text-[#2d2d2d]">
+    <footer class="py-8 pb-12 bg-cream text-[#2d2d2d]">
         <div class="max-w-7xl mx-auto px-8 lg:px-12">
             <div class="flex justify-center items-center gap-8">
                 <p class="text-gray-600 font-light">
