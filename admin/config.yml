@@ -13,45 +13,49 @@ collections:
         name: "site"
         file: "_data/site.yml"
         fields:
-          - {label: "Titolo Sito", name: "title", widget: "string"}
+          - {label: "Nome Sito", name: "title", widget: "string"}
           - {label: "Descrizione", name: "description", widget: "text"}
           - {label: "URL Sito", name: "url", widget: "string"}
-          - {label: "Logo", name: "logo", widget: "image"}
           - {label: "Favicon", name: "favicon", widget: "image"}
           - {label: "Immagine OG", name: "og_image", widget: "image"}
-          
-      - label: "Sezione Hero"
-        name: "hero"
-        file: "_data/hero.yml"
-        fields:
-          - {label: "Titolo", name: "title", widget: "string"}
-          - {label: "Sottotitolo", name: "subtitle", widget: "text"}
-          - {label: "Immagine", name: "image", widget: "image"}
-          - {label: "Testo Alt Immagine", name: "image_alt", widget: "string"}
-          - {label: "Testo Pulsante", name: "cta_text", widget: "string"}
-          - {label: "Link Pulsante", name: "cta_link", widget: "string"}
-          
-      - label: "Chi Siamo"
-        name: "about"
-        file: "_data/about.yml"
-        fields:
-          - {label: "Titolo", name: "title", widget: "string"}
-          - {label: "Descrizione", name: "description", widget: "text"}
-          - {label: "Immagine", name: "image", widget: "image"}
-          - {label: "Testo Alt Immagine", name: "image_alt", widget: "string"}
-          
-      - label: "Servizi"
-        name: "services"
-        file: "_data/services.yml"
-        fields:
-          - {label: "Titolo Sezione", name: "title", widget: "string"}
-          - label: "Lista Servizi"
-            name: "items"
+          - label: "Social Links"
+            name: "social_links"
             widget: "list"
             fields:
+              - {label: "Nome", name: "name", widget: "string"}
+              - {label: "URL", name: "url", widget: "string"}
+              - {label: "Icona SVG", name: "icon", widget: "text"}
+          
+      - label: "Contenuti Sezioni"
+        name: "content"
+        file: "_data/content.yml"
+        fields:
+          - label: "Sezioni Alternate"
+            name: "sections"
+            widget: "list"
+            max: 3
+            fields:
               - {label: "Titolo", name: "title", widget: "string"}
-              - {label: "Descrizione", name: "description", widget: "text"}
               - {label: "Immagine", name: "image", widget: "image"}
+              - {label: "Testo Alt Immagine", name: "image_alt", widget: "string"}
+              - {label: "Icona SVG", name: "icon", widget: "text"}
+              - label: "Paragrafi"
+                name: "text"
+                widget: "list"
+                field: {label: "Paragrafo", name: "paragraph", widget: "text"}
+          
+      - label: "Galleria"
+        name: "gallery"
+        file: "_data/gallery.yml"
+        fields:
+          - {label: "Titolo Sezione", name: "title", widget: "string"}
+          - {label: "Sottotitolo", name: "subtitle", widget: "text"}
+          - label: "Immagini"
+            name: "images"
+            widget: "list"
+            fields:
+              - {label: "Immagine", name: "src", widget: "image"}
+              - {label: "Descrizione", name: "alt", widget: "string"}
               
       - label: "Contatti"
         name: "contact"
@@ -59,24 +63,21 @@ collections:
         fields:
           - {label: "Titolo", name: "title", widget: "string"}
           - {label: "Descrizione", name: "description", widget: "text"}
-          - {label: "Email", name: "email", widget: "string"}
-          - {label: "Telefono", name: "phone", widget: "string"}
-          - {label: "Indirizzo", name: "address", widget: "text"}
+          - {label: "Email destinataria form", name: "form_email", widget: "string"}
           
-      - label: "Footer"
-        name: "footer"
-        file: "_data/footer.yml"
+      - label: "Citazione"
+        name: "quote"
+        file: "_data/quote.yml"
         fields:
-          - {label: "Copyright", name: "copyright", widget: "string"}
-
-  - name: "blog"
-    label: "Blog"
-    folder: "_posts"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Titolo", name: "title", widget: "string"}
-      - {label: "Data", name: "date", widget: "datetime"}
-      - {label: "Immagine in evidenza", name: "featured_image", widget: "image", required: false}
-      - {label: "Riassunto", name: "excerpt", widget: "text"}
-      - {label: "Contenuto", name: "body", widget: "markdown"}
+          - {label: "Testo Citazione", name: "text", widget: "text"}
+          
+      - label: "Area Legale"
+        name: "legal"
+        file: "_data/legal.yml"
+        fields:
+          - label: "Sezioni Legali"
+            name: "sections"
+            widget: "list"
+            fields:
+              - {label: "Titolo", name: "title", widget: "string"}
+              - {label: "Contenuto", name: "content", widget: "text"}
