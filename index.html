@@ -186,7 +186,15 @@
                     </p>
                     
                     <!-- Form di contatto -->
-                    <form name="contact" method="POST" netlify class="max-w-2xl mx-auto space-y-8" x-data="{ sending: false }" @submit.prevent="sending = true">
+                    <form name="contact" method="POST" netlify class="max-w-2xl mx-auto space-y-8"
+                        x-data="{ sending: false, success: false }"
+                        @submit.prevent="sending = true;
+                            $el.submit();
+                            setTimeout(() => {
+                                sending = false;
+                                success = true;
+                                $el.reset();
+                            }, 1000)">
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>
                                 <input type="text" name="nome" placeholder="Nome" required class="w-full px-0 py-4 bg-transparent border-0 border-b border-gray-300 focus:border-sage-400 focus:outline-none text-lg font-light transition-colors">
@@ -201,16 +209,27 @@
                         <div>
                             <textarea name="messaggio" placeholder="Il tuo messaggio..." rows="6" required class="w-full px-0 py-4 bg-transparent border-0 border-b border-gray-300 focus:border-sage-400 focus:outline-none text-lg font-light transition-colors resize-none"></textarea>
                         </div>
-                        <button type="submit" class="px-12 py-4 border border-sage-400 text-sage-400 hover:bg-sage-400 hover:text-white transition-all duration-300 font-light text-lg tracking-wide" :class="{ 'opacity-50 cursor-not-allowed': sending }" :disabled="sending">
-                            <span x-show="!sending">Invia Messaggio</span>
-                            <span x-show="sending" class="flex items-center justify-center gap-2">
-                                <svg class="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                                </svg>
-                                Invio...
-                            </span>
-                        </button>
+                        <div>
+                            <button type="submit"
+                                class="px-12 py-4 border border-sage-400 text-sage-400 hover:bg-sage-400 hover:text-white transition-all duration-300 font-light text-lg tracking-wide"
+                                :class="{ 'opacity-50 cursor-not-allowed': sending }"
+                                :disabled="sending || success">
+                                <span x-show="!sending && !success">Invia Messaggio</span>
+                                <span x-show="sending" class="flex items-center justify-center gap-2">
+                                    <svg class="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                    </svg>
+                                    Invio...
+                                </span>
+                                <span x-show="success" class="flex items-center justify-center gap-2 text-sage-400">
+                                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Messaggio Inviato
+                                </span>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
