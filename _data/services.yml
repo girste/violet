@@ -1,0 +1,11 @@
+title: "I Nostri Servizi"
+items:
+  - title: "Sviluppo Web"
+    description: "Creiamo siti web moderni e responsive per la tua attività."
+    image: "/assets/service1.jpg"
+  - title: "Design Grafico"
+    description: "Progettiamo identità visive accattivanti e memorable."
+    image: "/assets/service2.jpg"
+  - title: "Consulenza"
+    description: "Ti aiutiamo a trovare la strategia digitale più efficace."
+    image: "/assets/service3.jpg"
