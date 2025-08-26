@@ -186,7 +186,7 @@
                     </p>
                     
                     <!-- Form di contatto -->
-                    <form name="contact" method="POST" data-netlify="true" class="max-w-2xl mx-auto space-y-8"
+                    <form action="https://formsubmit.co/{{ contact.form_email }}" method="POST" class="max-w-2xl mx-auto space-y-8"
                         x-data="{ sending: false, success: false }"
                         @submit.prevent="sending = true;
                             $el.submit();
@@ -196,7 +196,7 @@
                                 $el.reset();
                             }, 1000)">
                         <div class="grid md:grid-cols-2 gap-6">
-                            <input type="hidden" name="form-name" value="contact" />
+                            <input type="hidden" name="_captcha" value="false" />
                             <div>
                                 <input type="text" name="nome" placeholder="Nome" required class="w-full px-0 py-4 bg-transparent border-0 border-b border-gray-300 focus:border-sage-400 focus:outline-none text-lg font-light transition-colors">
                             </div>
@@ -306,16 +306,16 @@
                 <!-- Tab Content -->
                 <div class="text-gray-600">
                     <div x-show="activeTab === 1" class="leading-relaxed">
-                        <p>I tuoi dati personali vengono trattati nel rispetto del Regolamento Europeo sulla Protezione dei Dati (GDPR). Le informazioni raccolte attraverso il form di contatto vengono utilizzate esclusivamente per rispondere alle tue richieste.</p>
+                        <p>{{ legal.sections[0].content }}</p>
                     </div>
                     <div x-show="activeTab === 2" class="leading-relaxed">
-                        <p>Questo sito utilizza cookie tecnici necessari per il corretto funzionamento delle pagine. Non utilizziamo cookie di profilazione o di terze parti per scopi pubblicitari.</p>
+                        <p>{{ legal.sections[1].content }}</p>
                     </div>
                     <div x-show="activeTab === 3" class="leading-relaxed">
-                        <p>Tutti i contenuti di questo sito, incluse immagini e testi, sono protetti da copyright. La riproduzione non autorizzata è vietata. I gioielli mostrati sono creazioni originali e possono essere soggetti a variazioni.</p>
+                        <p>{{ legal.sections[2].content }}</p>
                     </div>
                     <div x-show="activeTab === 4" class="leading-relaxed">
-                        <p>Per qualsiasi domanda riguardante il trattamento dei dati o questioni legali, contatta: <a href="mailto:privacy@violetjewels.com" class="text-sage-400 hover:underline">privacy@violetjewels.com</a></p>
+                        <p>{{ legal.sections[3].content }}</p>
                     </div>
                 </div>
             </div>
